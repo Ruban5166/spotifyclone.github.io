@@ -1,0 +1,323 @@
+:root {
+    --white:#FFFFFF;
+    --black:#000000;
+    --grey:#121212;
+    --light-grey:#242424;
+    --linear:linear-gradient (to right, re#e622c2,#509bf5);
+
+
+
+}
+
+body{
+    height: 100%;
+    overflow: hidden;
+    margin:0rem;
+    background-color: var(--black);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex:1;
+    overflow: hidden;
+    background-color: var(--black);
+    padding: 8px;
+
+
+}
+.sidebar{
+    flex: 0.25;
+    background-color:var(--black);
+    overflow-y: auto;
+    margin-right: 8px;
+    border-radius: 8px;
+}
+    
+
+
+.main-content{
+    flex:0.8;
+    background-color:var(--grey);
+    padding: 0rem 1rem;
+    padding-bottom: 6rem;
+  
+   
+   
+    border-radius: 8px;
+}
+.bottom-content{
+    position:fixed;
+    height: 80px;
+    width: 100%;
+    background:-o-linear-gradient(to right,#ae2896,#509bf5) ;
+    bottom: 0;
+    left: 0;
+}
+.top-icons{
+    background-color: var(--grey);
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.icons{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content:flex-start ;
+    gap: 1rem;
+    font-weight: 600;
+    font-size: 12px;
+    opacity:0.7;
+    cursor: pointer;
+    padding: 12px 8px;
+
+
+}
+.icons:hover{
+    opacity: 1;
+    transition: all 0.3s;
+}
+.icons img{
+    height: 20px;
+    width: px;
+
+}
+.icons a{
+    font-size: 16px;
+    color: var(--white);
+}
+.your-library{
+    flex: 3;
+    background-color: var(--grey);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+   
+
+}
+
+.library-top{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    opacity:0.7;
+    cursor: pointer;
+   
+}
+
+.icons p{
+    font-size: 12px;
+    color: var(--white);
+}
+
+
+.creteyourpalylis{
+    background-color: var(--light-grey);
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.findsomebrodcast{
+    background-color: var(--light-grey);
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    border-radius: 8px; 
+}
+.createplaylist{
+    margin: top 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--white);
+    border-radius: 2.5rem;
+    width: fit-content;
+    font-weight: normal;
+    
+}
+
+.createplaylist p{
+    color: var(--black);
+}
+.Browesbodcast{
+    margin: top 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background-color:white;
+    border-radius: 2.5rem;
+    width: fit-content;
+    font-weight: normal;
+
+
+}
+.Browesbodcast p{
+    color: var(--black);
+}
+
+.group-library{
+    flex: 3;
+    background-color: var(--grey);
+    border-radius: 8px;
+    overflow-y:auto;
+    padding: 0.5rem 1.5rem;
+    margin-left: 0;
+    border-left: 0;
+    height: 30vh;
+
+}
+.privacy-policy{
+    background-color: var(--black);
+
+}
+
+.privacy-list{
+color: var(--white);
+font-size: 14px;
+font-weight: 100;
+padding: 3rem 1rem;
+text-justify: auto;
+gap: 1rem;
+}
+.navbar{
+    position:sticky;
+    top:0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 0rem;
+    align-items: center;
+    background-color: var(--grey);
+    z-index: 1000;
+    overflow:hidden;
+
+
+}
+.arraow1{
+    border-radius: 100%;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--black);
+}
+
+.arraow2{
+    border-radius: 100%;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--black);
+}
+
+
+.sign{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content:flex-end ;
+    gap: 2rem;
+    font-weight: 600;
+    font-size: 16px;
+    opacity:0.7;
+    cursor: pointer;
+    padding: 12px 16px;
+}
+
+.login{
+    background-color: var(--white);
+    border-radius: 3rem;
+    padding: 0.1rem 2rem;
+    margin-right: 2rem;
+
+}
+
+.login p{
+    color: var(--black);
+    font-weight: bold;
+}
+
+.cards-container{
+    background-color: var(--grey);
+    border-radius: 8px;
+    overflow-y:auto;
+    padding: 0.5rem 0.5rem;
+    margin-left: 0;
+    border-left: 0;
+    height: 70vh;
+
+}
+.cards {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  
+  }
+  
+  .card {
+    width: 150px;
+    background-color: var(--light-grey);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    height: fit-content;
+    margin: 0rem 0.75rem;
+  }
+  
+  .card-img {
+    width: 100%;
+    border-radius: 0.35rem;
+  }
+  
+  .card-name{
+    margin: 0.25rem 0;
+  }
+  
+  .card-description {
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+
+
+  .preview{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:-o-linear-gradient(to right,#ae2896,#509bf5) ;
+    justify-content: space-between;
+  
+  }
+
+  .text h6{
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-left: 20px;
+    
+  }
+.text p{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px ;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.sign p{
+   justify-content: end;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-right: 2rem;
+}
